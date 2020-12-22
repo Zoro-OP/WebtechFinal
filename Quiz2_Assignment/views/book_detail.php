@@ -1,10 +1,12 @@
 <?php
 require_once '../controllers/bookcontroller.php';
 $key = $_GET["id"];
-
 $book = getBook($key);
 
 echo "  <table>";
+echo "<tr>";
+echo '<td > <strong>'.$book["id"].' </strong></td>';
+echo "</tr>";
 echo "<tr>";
 echo '<td><img src="../'.$book["image"].'" alt="" style="width:200px;height:200px;" ></td>';
 echo "</tr>";
